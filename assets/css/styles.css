@@ -1,0 +1,91 @@
+/*General*/
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: lightgray;
+}
+
+/* Main */
+.main{
+    width: 75vw;
+    margin: 3rem auto;
+}
+
+.title{
+    text-align: center;
+}
+
+/* Custom */
+.custom{
+    margin-bottom: 1rem;
+}
+
+.custom__select{
+    width: 100%;
+    padding: .5rem 1rem;
+}
+
+.custom__textarea{
+    width: 100%;
+    padding: 1rem;
+    margin-top: .5rem;
+}
+
+.custom__submit{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+/* Quotes */
+.quotes{
+    column-count: 4;
+    column-gap: 1rem;
+}
+
+@media screen and (min-width: 320px) {
+    .quotes{
+        column-count: 1;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .quotes {
+        column-count: 2;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .quotes {
+        column-count: 3;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .quotes {
+        column-count: 4;
+    }
+}
+
+.quote{
+    width: 100%;
+    display: inline-block;
+    margin: 1rem 0;
+    padding: 1rem;
+    box-shadow: 2px 2px 3px gray;
+    border-radius: 1rem;
+    background-color: white;
+}
+
+.quote_text{
+    font-weight: normal;
+    font-style: italic;
+    cursor: pointer;
+}
